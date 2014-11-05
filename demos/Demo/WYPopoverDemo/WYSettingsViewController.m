@@ -103,6 +103,9 @@
 {
     [aTableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    
+    
+    
     if (indexPath.section == 0)
     {
         NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];

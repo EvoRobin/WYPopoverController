@@ -830,7 +830,8 @@ static float edgeSizeFromCornerRadius(float cornerRadius) {
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {
     if (testHits) {
-        return NO;
+        //#148
+        return nil;
     }
     
     UIView *view = [super hitTest:point withEvent:event];
